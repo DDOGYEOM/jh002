@@ -45,6 +45,8 @@
     "rememberMeKey": "e1da92768ea5f46ffbd6c4bb5a85461fdde650bb6d990f69d8c81a88ae2b4e23334b905ab8382d041a600c7a46dd71ae8b6b",
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
-    "languages": ["en", "fr"]
+    "languages": ["en", "fr"],
+    "entities": ["Project", "Label", "Ticket", "Attachment", "Comment"],
+    "lastLiquibaseTimestamp": 1615461534000
   }
 }

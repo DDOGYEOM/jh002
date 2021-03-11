@@ -83,6 +83,15 @@ public class CacheConfiguration {
             createCache(cm, net.openobject.domain.User.class.getName() + ".authorities", jcacheConfiguration);
             createCache(cm, net.openobject.domain.PersistentToken.class.getName(), jcacheConfiguration);
             createCache(cm, net.openobject.domain.User.class.getName() + ".persistentTokens", jcacheConfiguration);
+            createCache(cm, net.openobject.domain.Project.class.getName(), jcacheConfiguration);
+            createCache(cm, net.openobject.domain.Label.class.getName(), jcacheConfiguration);
+            createCache(cm, net.openobject.domain.Label.class.getName() + ".tickets", jcacheConfiguration);
+            createCache(cm, net.openobject.domain.Ticket.class.getName(), jcacheConfiguration);
+            createCache(cm, net.openobject.domain.Ticket.class.getName() + ".attachments", jcacheConfiguration);
+            createCache(cm, net.openobject.domain.Ticket.class.getName() + ".labels", jcacheConfiguration);
+            createCache(cm, net.openobject.domain.Attachment.class.getName(), jcacheConfiguration);
+            createCache(cm, net.openobject.domain.Comment.class.getName(), jcacheConfiguration);
+            createCache(cm, net.openobject.domain.Comment.class.getName() + ".parents", jcacheConfiguration);
             // jhipster-needle-redis-add-entry
         };
     }
