@@ -1,5 +1,22 @@
 # jh002
 
+
+Redis 서버 실행 :
+docker-compose -f src/main/docker/redis.yml up -d
+
+DB 서버 실행 :
+docker-compose -f src/main/docker/mariadb.yml up -d
+
+
+jh002 디렉토리에서 터미널 창을 2개 열어야 함
+ 
+- 백엔드 서버 실행:  ./mvnw -P-webapp
+
+- 프론트 디버깅 서버 실행:  npm start
+
+
+---
+
 This application was generated using JHipster 7.0.0-beta.1, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v7.0.0-beta.1](https://www.jhipster.tech/documentation-archive/v7.0.0-beta.1).
 
 ## Development
