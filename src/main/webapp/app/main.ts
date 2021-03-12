@@ -8,6 +8,7 @@ import { ToastPlugin } from 'bootstrap-vue';
 import router from './router';
 import * as config from './shared/config/config';
 import * as bootstrapVueConfig from './shared/config/config-bootstrap-vue';
+import * as veutifyConfig from './shared/config/vuetify';
 import JhiItemCountComponent from './shared/jhi-item-count.vue';
 import JhiSortIndicatorComponent from './shared/sort/jhi-sort-indicator.vue';
 import InfiniteLoading from 'vue-infinite-loading';
@@ -45,7 +46,7 @@ Vue.component('jhi-item-count', JhiItemCountComponent);
 Vue.component('jhi-sort-indicator', JhiSortIndicatorComponent);
 Vue.component('infinite-loading', InfiniteLoading);
 const store = config.initVueXStore(Vue);
-
+const vuetify = veutifyConfig.initVuetify(Vue);
 const loginService = new LoginService();
 const accountService = new AccountService(store, (<any>Vue).cookie, router);
 
@@ -74,6 +75,7 @@ new Vue({
   el: '#app',
   components: { App },
   template: '<App/>',
+  vuetify,
   router,
   provide: {
     loginService: () => loginService,
