@@ -32,6 +32,7 @@ import LabelService from '@/entities/label/label.service';
 import TicketService from '@/entities/ticket/ticket.service';
 import AttachmentService from '@/entities/attachment/attachment.service';
 import CommentService from '@/entities/comment/comment.service';
+import CovidService from '@/entities/covid/covid.service';
 // jhipster-needle-add-entity-service-to-main-import - JHipster will import entities services here
 
 /* tslint:enable */
@@ -93,6 +94,7 @@ new Vue({
     ticketService: () => new TicketService(),
     attachmentService: () => new AttachmentService(),
     commentService: () => new CommentService(),
+    covidService: () => new CovidService(),
     // jhipster-needle-add-entity-service-to-main - JHipster will import entities services here
     accountService: () => accountService,
   },

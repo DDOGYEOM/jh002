@@ -32,6 +32,12 @@ const Comment = () => import('@/entities/comment/comment.vue');
 const CommentUpdate = () => import('@/entities/comment/comment-update.vue');
 // prettier-ignore
 const CommentDetails = () => import('@/entities/comment/comment-details.vue');
+// prettier-ignore
+const Covid = () => import('@/entities/covid/covid.vue');
+// prettier-ignore
+const CovidUpdate = () => import('@/entities/covid/covid-update.vue');
+// prettier-ignore
+const CovidDetails = () => import('@/entities/covid/covid-details.vue');
 // jhipster-needle-add-entity-to-router-import - JHipster will import entities to the router here
 
 export default [
@@ -153,6 +159,30 @@ export default [
     path: '/comment/:commentId/view',
     name: 'CommentView',
     component: CommentDetails,
+    meta: { authorities: [Authority.USER] },
+  },
+  {
+    path: '/covid',
+    name: 'Covid',
+    component: Covid,
+    meta: { authorities: [Authority.USER] },
+  },
+  {
+    path: '/covid/new',
+    name: 'CovidCreate',
+    component: CovidUpdate,
+    meta: { authorities: [Authority.USER] },
+  },
+  {
+    path: '/covid/:covidId/edit',
+    name: 'CovidEdit',
+    component: CovidUpdate,
+    meta: { authorities: [Authority.USER] },
+  },
+  {
+    path: '/covid/:covidId/view',
+    name: 'CovidView',
+    component: CovidDetails,
     meta: { authorities: [Authority.USER] },
   },
   // jhipster-needle-add-entity-to-router - JHipster will add entities to the router here

@@ -1,0 +1,40 @@
+{
+  "fields": [
+    {
+      "fieldName": "cid",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "ctype",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "centername",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "coi",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "facilityname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zipcode",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "service": "serviceClass",
+  "dto": "no",
+  "jpaMetamodelFiltering": true,
+  "readOnly": false,
+  "pagination": "pagination",
+  "name": "Covid",
+  "changelogDate": "20210317024426"
+}

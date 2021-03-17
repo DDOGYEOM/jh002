@@ -92,6 +92,7 @@ public class CacheConfiguration {
             createCache(cm, net.openobject.domain.Attachment.class.getName(), jcacheConfiguration);
             createCache(cm, net.openobject.domain.Comment.class.getName(), jcacheConfiguration);
             createCache(cm, net.openobject.domain.Comment.class.getName() + ".parents", jcacheConfiguration);
+            createCache(cm, net.openobject.domain.Covid.class.getName(), jcacheConfiguration);
             // jhipster-needle-redis-add-entry
         };
     }

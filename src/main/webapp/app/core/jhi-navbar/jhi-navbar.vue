@@ -49,6 +49,10 @@
             <font-awesome-icon icon="asterisk" />
             <span>Comment</span>
           </b-dropdown-item>
+          <b-dropdown-item to="/covid">
+            <font-awesome-icon icon="asterisk" />
+            <span>Covid</span>
+          </b-dropdown-item>
           <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
         </b-nav-item-dropdown>
         <b-nav-item-dropdown
