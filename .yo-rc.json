@@ -46,7 +46,7 @@
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
     "languages": ["en", "fr"],
-    "entities": ["Project", "Label", "Ticket", "Attachment", "Comment", "Covid"],
-    "lastLiquibaseTimestamp": 1615949066000
+    "entities": ["Project", "Label", "Ticket", "Attachment", "Comment", "Covid", "Etest"],
+    "lastLiquibaseTimestamp": 1615966193000
   }
 }

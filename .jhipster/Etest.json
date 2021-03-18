@@ -1,0 +1,28 @@
+{
+  "fields": [
+    {
+      "fieldName": "testname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "testnum",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "testaddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "testphone",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "service": "serviceClass",
+  "dto": "no",
+  "jpaMetamodelFiltering": true,
+  "readOnly": false,
+  "pagination": "pagination",
+  "name": "Etest",
+  "changelogDate": "20210317072953"
+}
