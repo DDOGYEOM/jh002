@@ -1,0 +1,84 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.1.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-1">
+        <dropForeignKeyConstraint baseTableName="attachment" constraintName="fk_attachment__ticket_id"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-2">
+        <dropForeignKeyConstraint baseTableName="jhi_user_authority" constraintName="fk_authority_name"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-3">
+        <dropForeignKeyConstraint baseTableName="comment" constraintName="fk_comment__child_id"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-4">
+        <dropForeignKeyConstraint baseTableName="comment" constraintName="fk_comment__login_id"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-5">
+        <dropForeignKeyConstraint baseTableName="rel_ticket__label" constraintName="fk_rel_ticket__label__label_id"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-6">
+        <dropForeignKeyConstraint baseTableName="rel_ticket__label" constraintName="fk_rel_ticket__label__ticket_id"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-7">
+        <dropForeignKeyConstraint baseTableName="ticket" constraintName="fk_ticket__assigned_to_id"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-8">
+        <dropForeignKeyConstraint baseTableName="ticket" constraintName="fk_ticket__project_id"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-9">
+        <dropForeignKeyConstraint baseTableName="ticket" constraintName="fk_ticket__reported_by_id"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-10">
+        <dropForeignKeyConstraint baseTableName="jhi_user_authority" constraintName="fk_user_id"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-11">
+        <dropForeignKeyConstraint baseTableName="jhi_persistent_token" constraintName="fk_user_persistent_token"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-12">
+        <dropUniqueConstraint constraintName="ux_user_email" tableName="is_user"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-13">
+        <dropUniqueConstraint constraintName="ux_user_email" tableName="jhi_user"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-14">
+        <dropUniqueConstraint constraintName="ux_user_login" tableName="is_user"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-15">
+        <dropUniqueConstraint constraintName="ux_user_login" tableName="jhi_user"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-16">
+        <dropTable tableName="attachment"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-17">
+        <dropTable tableName="comment"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-18">
+        <dropTable tableName="is_user"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-19">
+        <dropTable tableName="jhi_authority"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-20">
+        <dropTable tableName="jhi_persistent_token"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-21">
+        <dropTable tableName="jhi_user"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-22">
+        <dropTable tableName="jhi_user_authority"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-23">
+        <dropTable tableName="label"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-24">
+        <dropTable tableName="project"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-25">
+        <dropTable tableName="rel_ticket__label"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-26">
+        <dropTable tableName="ticket"/>
+    </changeSet>
+    <changeSet author="dogyeomkim (generated)" id="1616136267471-27">
+        <dropSequence sequenceName="sequence_generator"/>
+    </changeSet>
+</databaseChangeLog>
